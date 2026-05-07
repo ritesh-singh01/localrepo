@@ -13,6 +13,122 @@
     <p>This is a new button (Button)</p>
     <p>These all things should be subjected to the better and clean write case of te code.</p>
 <br>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container{
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label{
+      font-weight: bold;
+    }
+
+    input, select, textarea{
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .radio-group{
+      margin-bottom: 15px;
+    }
+
+    .radio-group input{
+      width: auto;
+      margin-right: 5px;
+    }
+
+    button{
+      width: 100%;
+      padding: 10px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover{
+      background-color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+      </div>
+
+      <label for="course">Select Course</label>
+      <select id="course">
+        <option>BCA</option>
+        <option>BBA</option>
+        <option>MCA</option>
+        <option>MBA</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
     
 
     
